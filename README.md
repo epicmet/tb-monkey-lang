@@ -1,8 +1,6 @@
-This is just my playground to work learn [Throsten Balls books](https://interpreterbook.com/)
+My playground while reading [Throsten Ball's books](https://interpreterbook.com/)
 
-It's literally a copy of the Monkey language implemenatation in the book (maybe) with minor changes.
+Exercises:
 
-Exersises:
-
-- Attach filename \& column and row number to tokens for better error logging
+- Attach filename, column and row number to error logs
 - Support full UTF-8 instead of only ASCII
