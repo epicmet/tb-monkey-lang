@@ -2,7 +2,6 @@ package repl
 
 import (
 	"bufio"
-	"fmt"
 	"io"
 	"monkey/evaluator"
 	"monkey/lexer"
@@ -15,7 +14,7 @@ func Start(in io.Reader, out io.Writer) {
 	scanner := bufio.NewScanner(in)
 
 	for {
-		fmt.Fprintf(out, PROMPT)
+		io.WriteString(out, PROMPT)
 		scannable := scanner.Scan()
 		if !scannable {
 			return
